@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: couchdbhelper
+Version: 0.1dev
+Summary: Python Couchdb helper functions
+Home-page: https://github.com/seryl/Python-Couchdbhelper
+Author: Josh Toft
+Author-email: joshtoft@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python couchdb helper
+Platform: UNKNOWN
