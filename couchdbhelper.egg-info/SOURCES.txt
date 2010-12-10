@@ -6,4 +6,5 @@ couchdbhelper.egg-info/SOURCES.txt
 couchdbhelper.egg-info/dependency_links.txt
 couchdbhelper.egg-info/entry_points.txt
 couchdbhelper.egg-info/not-zip-safe
+couchdbhelper.egg-info/requires.txt
 couchdbhelper.egg-info/top_level.txt

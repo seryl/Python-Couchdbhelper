@@ -55,7 +55,12 @@ class CouchHelper(object):
             self.db.update(data)
         return True
 
-    def sync_view(self, f):
+    def get_view(self, name, view):
+        if not self.is_connected:
+            raise Exception("No database selected")
+        return self.db.view('_design/%s/_view/%s' % (name, view))
+
+    def sync_view(self, f, remove_missing=False):
         def get_file(filename):
             viewlist = []
             data = open(filename).read()
@@ -92,5 +97,6 @@ class CouchHelper(object):
             viewlist = get_directory(f)
 
         return ViewDefinition.sync_many(
-            self.db, viewlist, remove_missing=True)
+            self.db, viewlist, remove_missing=remove_missing)
+
 
