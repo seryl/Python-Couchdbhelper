@@ -66,7 +66,10 @@ class CouchHelper(object):
             data = open(filename).read()
             data = json.loads(data)
 
-            design = data['_id'][8:] # removing _design/
+            if data['_id'].startswith('_design/'):
+                design = data['_id'][8:] # removing _design/
+            else:
+                design = data['_id']
             language = data['language']
             for k,v in data['views'].iteritems():
                 name = k
