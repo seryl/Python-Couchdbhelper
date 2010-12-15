@@ -1,6 +1,8 @@
 Python-Couchdbhelper
 ==============
 
+Kudos to [RockYou](http://www.rockyou.com) for supporting open source!
+
 ## Overview
 
     ch = CouchHelper('http://localhost:5984')
