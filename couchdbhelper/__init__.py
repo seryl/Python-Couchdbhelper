@@ -48,7 +48,7 @@ class CouchHelper(object):
         if isinstance(data, dict):
             doc = couchdb.Document()
             doc.update(data)
-            self.db.save(doc)
+            self.db.create(doc)
         elif isinstance(data, couchdb.Document):
             self.db.update(data)
         elif isinstance(data, list):
